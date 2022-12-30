@@ -190,7 +190,7 @@ textarea{
 .produtos{
     width: 100%;
     height: 60vh;
-    background-position-x: -8em;
+    background-position-x: -12em;
     background-position-y: -.5em;
     background-repeat: no-repeat;
     color: white;
@@ -210,6 +210,7 @@ textarea{
     justify-content: center;
     width: 80vw;
 }
+
 .tipoDeProduto p{
     text-align: center;
     font-size: 2rem;
@@ -228,23 +229,26 @@ textarea{
     height: 34vh;
     justify-content: center;
 }
-
+.seta{
+    justify-content: center;
+}
 .seta img{
     width: 8vw;
     height: 8vh;
     padding-bottom: 1em;
 }
+
 .textoProdutos p{
     color:white;
-    padding: 3em 6em 0em 6em;
+    padding: 4em 1.5em 0em 1.5em;
 }
 
 .descricaoDoProduto p{
-    padding: 3em 5em 0em 5em;
+    padding: 3em 1.5em 0em 1.5em;
     height: 28vh;
 }
 [data-textoProdutos = bottom]{
-    transform: translate3d( 0em, 10em, 0em);
+    transform: translate3d( 0em, 13.5em, 0em);
 }
 
 [data-textoProdutos  = bottom]:hover{
@@ -272,9 +276,10 @@ footer{
 }
 .finep{
     justify-content: center;
+    align-items: flex-end;
 }
 .finep img{
-    width: 30vw;
+    width: 40vw;
 }
 
 }

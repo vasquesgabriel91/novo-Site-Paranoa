@@ -472,6 +472,7 @@ span {
     padding: 0;
 }
 .valoresTextos{
+    padding-left: 2em;
     font-size: 0.9rem;
 }
 .gifs{
@@ -480,13 +481,13 @@ span {
 .certificado{
     display: flex;
     height: auto;
-    padding: 10%;
+    padding: 10% 0%;
     background: linear-gradient(22deg, rgba(0,91,116,1) 10%, rgba(78,213,250,1) 72%);
     align-items: center;
     justify-content: space-around;
 }
 .certificado .img1, .img2{
-    width: 30vw;
+    width: 43vw;
     box-shadow: 1.2em 1.2em 2em 0em rgb(1, 1, 36);
 }
 
