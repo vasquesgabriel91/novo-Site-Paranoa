@@ -46,3 +46,21 @@ if(targetProduto.length){
 })
 }
 
+
+const menuBtn = document.getElementById('menuBtn');
+function toggleMenu(event){
+    if (event.type === 'touchstart') event.preventDefault();
+    const menuNav = document.getElementById('menuNav');
+    menuNav.classList.toggle('active');
+    const active = menuNav.classList.contains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+    if (active){
+        event.currentTarget.setAttribute('aria-label','Fechar Menu')
+    }else{
+        event.currentTarget.setAttribute('aria-label','Abrir Menu')
+
+    }
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+menuBtn.addEventListener('touchstart', toggleMenu);

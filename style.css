@@ -8,37 +8,40 @@
 
 }
  /************* RODAPÉ **************/
-header{
+#menuHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(245, 243, 243);
+    background-color: #f5f3f3;
     width: 100%;
     height: 20vh;
 }
-header img{
+#menuHeader img{
     width: 18%;
 }
-
-nav ul{
-    display: flex;
-     margin: auto 0;
+#menuBtn{
+    display: none;
 }
-nav ul li{
+
+#menuNav #menuLi{
+    display: flex;
+    margin: auto 0;
+}
+#menuNav #menuLi li{
     padding: 0.6em;
     list-style-type: none;
     text-transform: uppercase;
 
 }
-nav ul li a{
+#menuNav #menuLi li a{
     text-decoration: none;
     font-size: 0.85rem;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     color: #181818;
 }
-nav ul li a:hover{
+#menuNav #menuLi li a:hover{
     color: inherit;
 }
 

@@ -1,20 +1,66 @@
 @media only screen and (max-width: 500px){
-    header{
-        height: auto;
+
+    #menuHeader img{
         display: flex;
+        padding-top: 0;
+    }
+    #menuBtn{
+        gap: 1.5em;
+        display: flex;
+        border: none;
+        background-color: transparent;
+    }
+    #menuToggle{
+        width: 7vw;
+        border-top: .2em solid ;
+    }
+    #menuToggle::before , #menuToggle::after{
+        content: '';
+        display: block;
+        width: 7vw; 
+        height: .2em;   
+        background-color: currentColor;
+        margin-top: .5em;
+        transition: .4s;
+        position: relative;
+    }
+    #menuNav.active #menuToggle{
+        border-top-color:transparent ;
+    }
+    #menuNav.active #menuToggle::before{
+        transform: rotate(45deg);
+    }
+    #menuNav.active #menuToggle::after{
+        transform: rotate(-45deg);
+        top: -.7em;
+    }
+    #menuLi{
+        position: absolute;
         flex-direction: column;
+        background-color: #f5f3f3;
+        top: 20vh;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        z-index: 1000;
+        display: none;
+        padding: 0;
+        transition:ease-in .7s;
+        visibility: hidden;
+        overflow-y: hidden;
+        }
+    #menuNav.active #menuLi{
+        height: 80vh;
+        visibility: visible;
+        overflow-y: auto;
     }
-    header img{
-        padding-top: 1em;
+    #menuNav #menuLi li{
+        margin: 0 auto;
+        width: 80vw;
+        border-bottom: 2px solid #58d8fc ;
     }
-    nav ul {
-        padding:0em 0em 1em 0em;
-        text-align: center;
-        flex-direction: column;
-        line-height: 0.4em;
-    }
-   nav ul li a {
-    font-size: 0.6rem;
+    #menuNav #menuLi li a {
+        font-size: 0.8rem;
    }
    /************* CARROSEL PRINCIPAL MENU.HTML ************/
    .carousel-control-prev-icon, .carousel-control-next-icon{
