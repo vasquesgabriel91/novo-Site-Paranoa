@@ -49,7 +49,7 @@ if(targetProduto.length){
 
 const menuBtn = document.getElementById('menuBtn');
 function toggleMenu(event){
-    if (event.cancelable === 'touchstart') event.preventDefault();
+    if (event.type === 'touchstart') event.cancelable();
     const menuNav = document.getElementById('menuNav');
     menuNav.classList.toggle('active');
     const active = menuNav.classList.contains('active');
@@ -61,6 +61,5 @@ function toggleMenu(event){
 
     }
 }
-
 menuBtn.addEventListener('click', toggleMenu);
 menuBtn.addEventListener('touchstart', toggleMenu);
