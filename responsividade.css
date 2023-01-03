@@ -13,13 +13,13 @@
         border: none;
     }
     #menuToggle{
-        width: 8vw;
+        width: 9vw;
         border-top: .2em solid;
     }
     #menuToggle::before , #menuToggle::after{
         content: '';
         display: block;
-        width: 8vw; 
+        width: 9vw; 
         height: .2em;   
         background-color: currentColor;
         margin-top: .65em;
