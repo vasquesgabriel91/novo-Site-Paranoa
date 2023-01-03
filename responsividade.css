@@ -8,19 +8,18 @@
         gap: 1.5em;
         display: flex;
         border: none;
-        background-color: transparent;
     }
     #menuToggle{
-        width: 7vw;
-        border-top: .2em solid ;
+        width: 8vw;
+        border-top: .2em solid #58d8fc;
     }
     #menuToggle::before , #menuToggle::after{
         content: '';
         display: block;
-        width: 7vw; 
+        width: 8vw; 
         height: .2em;   
-        background-color: currentColor;
-        margin-top: .5em;
+        background-color: #58d8fc;
+        margin-top: .65em;
         transition: .4s;
         position: relative;
     }
@@ -32,7 +31,7 @@
     }
     #menuNav.active #menuToggle::after{
         transform: rotate(-45deg);
-        top: -.7em;
+        top: -.82em;
     }
     #menuLi{
         position: absolute;
