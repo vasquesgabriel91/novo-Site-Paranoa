@@ -1,8 +1,11 @@
 @media only screen and (max-width: 500px){
-
+    #menuHeader{
+        height: 13vh;
+    }
     #menuHeader img{
         display: flex;
         padding-top: 0;
+        width: 25%;
     }
     #menuBtn{
         gap: 1.5em;
@@ -11,14 +14,14 @@
     }
     #menuToggle{
         width: 8vw;
-        border-top: .2em solid #58d8fc;
+        border-top: .2em solid;
     }
     #menuToggle::before , #menuToggle::after{
         content: '';
         display: block;
         width: 8vw; 
         height: .2em;   
-        background-color: #58d8fc;
+        background-color: currentColor;
         margin-top: .65em;
         transition: .4s;
         position: relative;
@@ -37,7 +40,7 @@
         position: absolute;
         flex-direction: column;
         background-color: #f5f3f3;
-        top: 20vh;
+        top: 13vh;
         right: 0;
         width: 100vw;
         height: 0;
@@ -47,7 +50,7 @@
         transition:ease-in .7s;
         visibility: hidden;
         overflow-y: hidden;
-        }
+    }
     #menuNav.active #menuLi{
         height: 80vh;
         visibility: visible;
@@ -150,7 +153,6 @@ textarea{
     height: auto;
     padding: 2em;
     overflow: hidden;
-
 }
 .textoApresentacao{
     height: auto;
@@ -316,10 +318,10 @@ footer{
 }
 .servicos ul {
     padding: 0;
-    margin-top: 1em;
-   
+    margin-top: 1em; 
 }
 .finep{
+    padding-left: 1em;
     justify-content: center;
     align-items: flex-end;
 }
