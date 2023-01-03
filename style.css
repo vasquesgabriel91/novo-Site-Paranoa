@@ -353,6 +353,7 @@ footer{
 span {
     padding-right: 0.5em;
     content: "\2771";
+    color: #00799b;
 } 
   .redes-sociais {
     display: inline-flex;
