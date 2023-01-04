@@ -1,3 +1,5 @@
+
+
 const target = document.querySelectorAll('[data-animacao]');
 const animateclass = 'animate';
 function animacaoscroll(){
@@ -49,7 +51,7 @@ if(targetProduto.length){
 
 const menuBtn = document.getElementById('menuBtn');
 function toggleMenu(event){
-    if (event.type === 'touchstart') event.cancelable();
+    if (event.cancelable === 'touchstart')event.preventDefault();
     const menuNav = document.getElementById('menuNav');
     menuNav.classList.toggle('active');
     const active = menuNav.classList.contains('active');
@@ -62,4 +64,16 @@ function toggleMenu(event){
     }
 }
 menuBtn.addEventListener('click', toggleMenu);
-menuBtn.addEventListener('touchstart', toggleMenu);
+menuBtn.addEventListener('wheel', toggleMenu);
+     
+
+
+const menuHeader = document.querySelectorAll('header');
+function ScrollAnimacao(){
+    
+    if (window.scrollY >= 20){
+        menuHeader.classList.toggle('headerMenu');
+}    
+}
+menuHeader.addEventListener('scroll', ScrollAnimacao());
+

@@ -9,13 +9,23 @@
 }
  /************* RODAPÉ **************/
 #menuHeader{
-    display: flex;
+    position: fixed;
+    display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #f5f3f3;
     width: 100%;
     height: 20vh;
+    z-index: 1000;
+    background: transparent;
+    transition: .6s;
+
+}
+#menuHeader.headerMenu{
+   
+    background: #0349a52a;
+    box-shadow: 0em .8em 1.5em 0em rgba(26, 26, 26, 0.651);
+
 }
 #menuHeader img{
     width: 18%;
