@@ -8,27 +8,28 @@
 
 }
  /************* RODAPÉ **************/
-#menuHeader{
+[data-menuColor="menuColor"]{
     position: fixed;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 12vh;
     z-index: 1000;
-    background: transparent;
-    transition: .6s;
-
+    transition:all .8s;
 }
-#menuHeader.headerMenu{
-   
-    background: #0349a52a;
-    box-shadow: 0em .8em 1.5em 0em rgba(26, 26, 26, 0.651);
 
+[data-MenuColor].color { 
+    background-color: #eceaeaee;
+    box-shadow: 0em .8em 1.5em 0em rgba(26, 26, 26, 0.651);
+}
+[data-MenuColor].color #menuNav #menuLi li a{
+    transition:all 1s;
+    color: #000000;
 }
 #menuHeader img{
-    width: 18%;
+    width: 16%;
 }
 #menuBtn{
     display: none;
@@ -46,14 +47,13 @@
 }
 #menuNav #menuLi li a{
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: .85rem;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    color: #181818;
+    color: #fcf9f9;
+    font-weight: 400;
 }
-#menuNav #menuLi li a:hover{
-    color: inherit;
-}
+
 
 /************* CARROSSEL PRICIPAL *************/
 #carouselExampleControls{
@@ -88,7 +88,7 @@
     padding: 7em 0em 5em 0em;
     height: 25vh;
     line-height: 4em;
-    background-image:  linear-gradient(22deg, rgb(182, 182, 182) 0%, rgb(255, 255, 255)100%);
+    background-image:  linear-gradient(22deg, #b6b6b6 0%, #ffffff 100%);
     box-shadow: inset 0em 0em 0.7em 0.1em #424242;
     color: rgb(39, 38, 38);
     text-transform: uppercase;

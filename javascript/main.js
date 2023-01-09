@@ -67,13 +67,21 @@ menuBtn.addEventListener('click', toggleMenu);
 menuBtn.addEventListener('wheel', toggleMenu);
      
 
-
-const menuHeader = document.querySelectorAll('header');
-function ScrollAnimacao(){
-    
-    if (window.scrollY >= 20){
-        menuHeader.classList.toggle('headerMenu');
-}    
+const menuHeader = document.querySelectorAll('[data-MenuColor]');
+const Color = 'color';
+function animaMenuColor(){
+    const windowColor = window.pageYOffset > 0;
+    menuHeader.forEach(function(elemento){
+        if((windowColor)> elemento.offsetTop){
+            elemento.classList.add(Color);
+        } else{
+            elemento.classList.remove(Color);
+        }
+    })
 }
-menuHeader.addEventListener('scroll', ScrollAnimacao());
+if(menuHeader.length){
+    window.addEventListener('scroll',function(){
+        animaMenuColor();
+})
+}
 

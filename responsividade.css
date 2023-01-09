@@ -1,6 +1,8 @@
 @media only screen and (max-width: 500px){
     #menuHeader{
+        position: static;
         height: 13vh;
+        background-color: #eceaea;
     }
     #menuHeader img{
         display: flex;
@@ -11,6 +13,8 @@
         gap: 1.5em;
         display: flex;
         border: none;
+        background-color: transparent;
+
     }
     #menuToggle{
         width: 9vw;
@@ -28,6 +32,7 @@
     }
     #menuNav.active #menuToggle{
         border-top-color:transparent ;
+        
     }
     #menuNav.active #menuToggle::before{
         transform: rotate(45deg);
@@ -39,7 +44,7 @@
     #menuLi{
         position: absolute;
         flex-direction: column;
-        background-color: #f5f3f3;
+        background-color: #eceaea;
         top: 13vh;
         right: 0;
         width: 100vw;
@@ -57,11 +62,13 @@
         overflow-y: auto;
     }
     #menuNav #menuLi li{
+        background-color: transparent;
         margin: 0 auto;
         width: 80vw;
         border-bottom: 2px solid #58d8fc ;
     }
     #menuNav #menuLi li a {
+        color: #0f0f0f;
         display: flex;
         width: 100%;
         font-size: 0.8rem;
