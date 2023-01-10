@@ -3,10 +3,11 @@
         position: static;
         height: 13vh;
         background-color: #eceaea;
+        padding: 1em 0;
     }
     #menuHeader img{
         display: flex;
-        padding-top: 0;
+        padding: 1em;
         width: 50%;
     }
     #menuBtn{
