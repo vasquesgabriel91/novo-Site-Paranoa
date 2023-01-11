@@ -67,17 +67,21 @@
         margin: 0 auto;
         width: 80vw;
         border-bottom: 2px solid #58d8fc ;
+        padding-top: 1.5em;
     }
     #menuNav #menuLi li a {
         color: #0f0f0f;
         display: flex;
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        text-shadow: none;
+
    }
    /************* CARROSEL PRINCIPAL MENU.HTML ************/
    .carousel-control-prev-icon, .carousel-control-next-icon{
-    width: 7vw;
-    height: 5vh;
+    
+    width: 8vw;
+    height: 4vh;
    }
    
 /************* INFORMAÇÕES DEPOIS DO CARROSSEL PRICIPAL ************/
@@ -155,7 +159,7 @@
     height: 30vh;
 }
 textarea{
-    padding: 1em 0em 0em 1em;
+    padding: 1.4em 0em 0em 1em;
 }
 /*----------------------- EMPRESA.HTML -----------------------*/
 
@@ -248,7 +252,7 @@ textarea{
     width: 100%;
     height: 60vh;
     background-position-x: -12em;
-    background-position-y: -.5em;
+    background-position-y: -.3em;
     background-repeat: no-repeat;
     color: white;
     font-size: 3rem;
